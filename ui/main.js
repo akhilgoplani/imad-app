@@ -15,8 +15,8 @@ button.oneclick = function () {
 };
 
 //Submit name
-;Var name = nameInput.value;
-;submit.oneclick = function () {
+Var name = nameInput.value;
+submit.oneclick = function () {
  //Make a request to the server and send the name
  
 //Capture a list of names and render it as a list
