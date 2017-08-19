@@ -1,21 +1,33 @@
 // Counter code
 var button = document.getElementById('counter');
-var counter = 0;
 
 button.oneclick = function () {
     
-    //make a request to the counter endpoint
+    // Create a request object
+    var request = new XMLHttpRequest();
     
     //capture the response and store it in a variable
+    request.onereadystatechange = function () {
+        if (request.readystate === XMLHttpRequest.Done) {
+            // Take some action
+            if (request.status === 200) {
+                var counter = request.responseText;
+                 var span = document.getElememntById('count');
+                 span.innerHTML = counter.tostring();
+            }
+        }
+        // Not done yet
+    };
     
-    //Render the variable in the correct span
-    Counter = counter + 1;
-    var span = document.getElememntById('count');
-    span.innerHTML = counter.tostring();
+    // Make the request
+    rquest.open('Get', 'http://akhilgoplani.imad.hasura-app.io', true);
+    request.send(null);
 };
-
+    
 //Submit name
+var nameInput = document.getElementById('name');
 Var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
 submit.oneclick = function () {
  //Make a request to the server and send the name
  
