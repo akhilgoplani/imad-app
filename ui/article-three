@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="center">
+            <img id='madi' src="https://pbs.twimg.com/profile_images/890978571161939968/EIZKsedc_400x400.jpg" class="img-medium"/>
+        </div>
+        <br>
+        <div class="center">
+        <h3>AYUSH GOPLANI</h3>
+        <hr>
+        <br>
+        </div>
+        <div>
+            <a href="http://akhilgoplani.imad.hasura-app.io/article-one">second page</a>
+        </div>
+        
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
+    </body>
+</html>
